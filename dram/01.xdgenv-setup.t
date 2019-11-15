@@ -10,21 +10,21 @@ setup XDG variables
 ===================
 
   $ xdgenv exec env | grep XDG | sort
-  XDG_CACHE_HOME=/home/*/.cache (glob)
+  XDG_CACHE_HOME=/*/.cache (glob)
   XDG_CONFIG_DIRS=/etc/xdg
-  XDG_CONFIG_HOME=/home/*/.config (glob)
+  XDG_CONFIG_HOME=/*/.config (glob)
   XDG_DATA_DIRS=/usr/local/share:/usr/share
-  XDG_DATA_HOME=/home/*/.local/share (glob)
+  XDG_DATA_HOME=/*/.local/share (glob)
 
 setup application variables
 ===========================
 
   $ . xdgenv-exec FOO foo -- env | grep FOO | sort
-  FOO_CACHE_HOME=/home/*/.cache/foo (glob)
+  FOO_CACHE_HOME=/*/.cache/foo (glob)
   FOO_CONFIG_DIRS=/etc/xdg/foo
-  FOO_CONFIG_HOME=/home/*/.config/foo (glob)
+  FOO_CONFIG_HOME=/*/.config/foo (glob)
   FOO_DATA_DIRS=/usr/local/share/foo:/usr/share/foo
-  FOO_DATA_HOME=/home/*/.local/share/foo (glob)
+  FOO_DATA_HOME=/*/.local/share/foo (glob)
 
 parent environment takes precedence
 ===================================
