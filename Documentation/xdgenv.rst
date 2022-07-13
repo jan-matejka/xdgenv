@@ -1,8 +1,8 @@
 xdgenv
 ######
 
-xdg environment initializer
----------------------------
+Runtime agnostic xdg environment variables initializer for applications
+------------------------------------------------------------------------
 
 :Manual section: 1
 :Date: 2017-07-02
