@@ -81,4 +81,4 @@ check: build
 
 	mkdir -p $(brootdir)/fakeroot
 	DESTDIR=$(brootdir)/fakeroot $(MAKE) install
-	PATH="$(shell pwd)/$(brootdir)/fakeroot/usr/local/bin:$(PATH)" dram $(dramopts) $(dram_path)
+	PATH="$(shell pwd)/$(brootdir)/fakeroot$(prefix)/bin:$(PATH)" dram $(dramopts) $(dram_path)
