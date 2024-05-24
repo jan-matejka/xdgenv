@@ -1,0 +1,11 @@
+Source: xdgenv
+Maintainer: Jan Matějka <jan@matejka.ninja>
+Section: misc
+Priority: optional
+Standards-Version: 4.6.2
+Build-Depends: debhelper-compat (= 13), python3-docutils
+
+Package: xdgenv
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, zsh
+Description: Runtime agnostic xdg environment variables initializer for applications
